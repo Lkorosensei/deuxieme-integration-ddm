@@ -1,16 +1,36 @@
 * {
     box-sizing: border-box;
     margin: 0;
-    padding: ;
+    padding: 0;
     font-size: 20px;
     /* border: 1px solid red; */
 }
 
-/* .container {
-    background-color: rgb(205, 205, 224);
-    height: 100vh;
-    width: 100%;
-} */
+@media screen and (min-width:768px) {
+.container {
+    width: 90%;
+    margin: auto;
+    background-color: #FFFFFF ;
+ }
+
+body {
+    background-color: #E2E2E2;
+}
+}
+
+@media screen and (min-width:1024px) {
+    body {
+        background-color: #E2E2E2;
+    }
+    .container {
+        width: 70%;
+        margin: auto;
+        background-color: #FFFFFF ;
+     }
+
+}
+
+/* -----------------------------------------------------HEADER-------------------------------------------------------- */
 
 header {
     display: flex;
@@ -25,17 +45,132 @@ header li {
     text-align: center;
     margin: 1px;
     font-family: 'Montserrat', sans-serif;
-    font-family: 'Open Sans', sans-serif;
-    font-family: 'Roboto', sans-serif;
     }
+
  nav {
     width: 100%;
+ }
+
+ /* ---------responsive-tablette-HEADER ------------ */
+
+ @media screen and (min-width:768px) {
+    header ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        background-color: #E2E2E2;
+        margin: auto 4%;
+        padding: 3%;
+    }
+ /* ---------responsive-tablette-HEADER ------------ */
  }
 
  h1 {
     color: #b16420;
     font-family: 'Montserrat', sans-serif;
-    font-family: 'Open Sans', sans-serif;
-    font-family: 'Roboto', sans-serif;
-    margin: 0.5em;
+    /* font-family: 'Open Sans', sans-serif;
+    font-family: 'Roboto', sans-serif; */
+    padding: 0.5em;
  }
+ /* ---------------------------------------------HEADER------------------------------------------- */
+
+ /* ---------------------------------------------MAIN------------------------------------------------ */
+
+
+ /* -------------------Section1-------------------- */
+ h2 {
+    text-align: center;
+    padding-bottom: 5%;
+ }
+
+.section1 img {
+    width: 100%;
+}
+
+.section1 {
+    width: 100%;
+    padding: 5%;
+    margin: auto;
+    /* border: 1px solid red; */
+}
+
+section p {
+    padding: 3%;
+}
+
+/* ----------------------Section2-------------------- */
+
+.section2 {
+    display: none;
+}
+
+/* ---------responsive-tablette-------- */
+
+@media screen and (min-width:768px) {
+    
+    .section2 {
+        display: flex;
+        /* padding-bottom: 10%; */
+        border-top: 1px solid rgba(0, 0, 0, 0.329);
+        justify-content: space-around;
+        /* border: 1px solid blue; */
+        
+    }
+
+    .section2 article {
+        /* border: 1px solid red; */
+    }
+/* -------------box1--------- */
+
+    .box1 {
+        display: flex;
+        flex-direction: column;
+        width: 30%;
+        /* border: 1px solid blue; */
+    }
+
+    .box1 ul {
+        list-style: none;
+        padding: 5%;
+    }
+
+    
+    .box1 h2 {
+        margin: 10%;
+    }
+
+/* -------------box2------------ */
+
+    .box2 {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        /* border: 1px solid green; */
+    }
+
+    .box2 h2 {
+        margin: 5%;
+    }
+
+
+    .img-box {
+        padding: 10%;
+    }
+
+}
+
+@media screen and (min-width:1024px) {
+    
+
+}
+
+
+/* -----------------------------------------------MAIN-------------------------------------------------- */
+
+/* -----------------------------------------------FOOTER------------------------------------------------ */
+
+footer p {
+    padding: 3%;
+    border-top: 1px solid rgba(0, 0, 0, 0.329) ;
+    text-align: center;
+}
